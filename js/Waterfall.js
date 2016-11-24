@@ -1,4 +1,32 @@
-	var liBox = document.getElementsByTagName('li');
+
+var newimages=[];
+var ci=0 , jd=0;
+var arr=[];
+
+ for (var i=1; i<=30; i++){
+	arr.push("https://qq153.github.io/Waterfall/img/m"+i+".jpg");
+}
+
+   for (var i=0; i<arr.length; i++){
+        newimages[i]=new Image()
+        newimages[i].src=arr[i]
+        newimages[i].onload=function(){
+            show();
+        }
+    }
+   
+
+function show(){
+	ci++;
+	jd = Math.floor(ci/arr.length*100);
+    console.log(jd);
+    if(jd==100){
+    	waterfall();
+    }
+}
+
+	function waterfall(){
+		var liBox = document.getElementsByTagName('li');
 		var kk = 0;
 		var xin;
 		var jj=10;
@@ -34,3 +62,4 @@
 				}
 			}
 		}
+	}
