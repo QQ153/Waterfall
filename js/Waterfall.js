@@ -1,4 +1,6 @@
-
+var num = document.getElementById("num");
+var jz = document.getElementById("jz");
+var ulBox = document.getElementById("liBox");
 var newimages=[];
 var ci=0 , jd=0;
 var arr=[];
@@ -19,8 +21,11 @@ var arr=[];
 function show(){
 	ci++;
 	jd = Math.floor(ci/arr.length*100);
+	num.innerHTML = jd + "%";
     console.log(jd);
     if(jd==100){
+    	jz.style.display = "none";
+    	ulBox.style.display = "block";
     	waterfall();
     }
 }

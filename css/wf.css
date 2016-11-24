@@ -1,0 +1,116 @@
+ul{
+	width: 1000px;
+	margin: 0 auto;
+	display: none;
+}
+li{
+	width: 333px;
+	float: left;
+}
+#lie1{
+	background-color: #007AFF;
+}
+#lie2{
+	background-color: #556666;
+}
+#lie3{
+	background-color: orangered;
+}
+div{
+	overflow: hidden;
+	width: 100%;
+}
+img{
+	width: 100%;
+}
+
+	#jz{
+			margin: 100px auto 0;
+			width: 200px;
+		}
+	
+		#wrap{
+			margin-top: 20px;
+			margin-left: 10px;
+			width: 180px;
+			height: 30px;
+			background: linear-gradient(to right,transparent 14px ,#567890 10px);
+			background-repeat: repeat-x;
+			background-size: 20px 6px;
+			animation:dian 1.5s linear infinite;
+		}
+		#num{
+			display: block;
+			font-size: 20px;
+			margin-top:30px;
+			padding-left: 80px;
+			font-family: Constantia;
+		}
+		@keyframes dian{
+			0%{
+				width: 0;
+			}
+			100%{
+				width: 200px;
+			}
+		}
+		
+		
+		
+		@keyframes wai{
+			0%{
+				opacity: 0;
+				transform: rotate(160deg);
+			}
+			50%{
+				opacity: 1;
+				transform: rotate(140deg);
+			}
+			100%{
+				opacity: 0;
+				transform: rotate(-300deg);
+			}
+		}
+		
+		@keyframes nei{
+			0%{
+				transform: rotate(0deg);
+			}
+			100%{
+				transform: rotate(360deg);
+			}
+		}
+		
+		.zhuan{
+			width: 200px;
+			height: 200px;
+			position: relative;
+		}
+		.wai{
+			position: absolute;
+			width: 190px;
+			height: 190px;
+			border: 5px solid #333;
+			border-bottom: 5px solid transparent;
+			border-top: 5px solid transparent;
+			border-radius: 190px;
+			animation: wai 1.5s infinite;
+		}
+		
+		.nei{
+			margin: 15px 0 0 15px;
+			position: absolute;
+			width: 160px;
+			height: 160px;
+			border: 5px solid #333;
+			border-bottom: 5px solid transparent;
+			border-top: 5px solid transparent;
+			border-radius: 160px;
+			animation: nei 1.5s linear infinite;
+		}
+		.lang{
+			width: 140px;
+			position:absolute;
+			border-radius: 140px;
+			margin: 30px 0 0 30px;
+		}

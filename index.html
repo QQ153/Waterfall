@@ -4,35 +4,19 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="css/base.css"/>
 	<title>瀑布流</title>
-	<style type="text/css">
-		ul{
-			width: 1000px;
-			margin: 0 auto;
-		}
-		li{
-			width: 333px;
-			float: left;
-		}
-		#lie1{
-			background-color: #007AFF;
-		}
-		#lie2{
-			background-color: #556666;
-		}
-		#lie3{
-			background-color: orangered;
-		}
-		div{
-			border: 1px solid skyblue;
-			overflow: hidden;
-			width: 100%;
-		}
-		img{
-			width: 100%;
-		}
-	</style>
+	<link rel="stylesheet" type="text/css" href="css/wf.css"/>
 </head>
 <body>
+	<div id="jz">
+		<div class="zhuan">
+			<img class="lang" src="img/lang.jpg"/>
+			<div class="wai"></div>
+			<div class="nei"></div>
+		</div>
+		
+		<span id="num">0%</span>
+		<div id="wrap"></div>
+	</div>
 	
 	<ul class="clearfix" id="liBox">
 		<li id="lie1">
